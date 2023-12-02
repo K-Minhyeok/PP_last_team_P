@@ -48,34 +48,40 @@
     </script>
 </head>
 <body>
-<h1>4번째 과제</h1>
+<h1>Handong Global Used market </h1>
 
-<table id="list" width="90%">
-    <thead>
-    <tr>
-        <th>#</th>
-        <th>title</th>
-        <th>writer</th>
-        <th>content</th>
-        <th>category</th>
-        <th>option1</th>
-        <th>option2</th>
-        <th>option3</th>
-    </tr>
-    </thead>
-    <tbody>
-    <c:forEach items="${list}" var="u">
-    <tr>
-        <td>${u.seq}</td>
-        <td>${u.title}</td>
-        <td>${u.writer}</td>
-        <td>${u.content}</td>
-        <td>${u.category}</td>
-        <td><a href="view/${u.seq}">View</a></td>
-        <td><a href="editform/${u.seq}">Edit</a></td>
-        <td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>
-    </tr>
-    </c:forEach>
+
+<c:forEach items="${list}" var="u">
+    <div class="post">
+
+        <p><strong>#:</strong> ${u.seq}</p>
+        <%--    글 몇 번째인지 순서    --%>
+
+
+        <p><strong>Title:</strong> ${u.title}</p>
+            <%--    글 제목    --%>
+
+        <p><strong>Category:</strong> ${u.category}</p>
+            <%--    카테고리    --%>
+
+        <p><strong>Writer:</strong> ${u.writer}</p>
+            <%--    작성자 or연락처    --%>
+
+        <p><strong></strong> 여기 사진 자리</p>
+            <%--    사진    --%>
+
+
+
+        <p>
+            <a href="view/${u.seq}">View</a>
+            <a href="editform/${u.seq}">Edit</a>
+            <a href="javascript:delete_ok('${u.seq}')">Delete</a>
+        </p>
+    </div>
+
+    <br>
+    <hr width = "100%" color = "blue" size = "3">
+</c:forEach>
 
 </table>
 <br/><a href="addpostform">Add New Post</a>

@@ -10,6 +10,7 @@
 
 <h1>Add New Post</h1>
 <form action="addpost" method="post">
+
     <table>
         <tr>
             <td>Category:</td>
@@ -27,6 +28,24 @@
             <td>Content:</td>
             <td><textarea cols="50" rows="5" name="content"></textarea></td>
         </tr>
+
+        <tr>
+            <td>Price:</td>
+            <td><input type="text" name="price"/></td>
+        </tr>
+
+        <tr>
+            <label for="location">Select a location:</label>
+            <select id="location" name="location">
+                <option value="Bethel">벧엘 </option>
+                <option value="OH">오석 </option>
+                <option value="NTH">뉴턴홀</option>
+            </select>
+        </tr>
+
+        <tr><td>File</td><td><input type="file" name="img"/></td></tr>
+
+
         <tr>
             <td><a href="posts">View All Records</a></td>
             <td align="right"><input type="submit" value="Add Post"/></td>

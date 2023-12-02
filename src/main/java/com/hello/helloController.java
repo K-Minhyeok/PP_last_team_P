@@ -79,13 +79,11 @@ public class helloController {
         return "redirect:posts";
     }
 
-//    이 위로는 문제 일으키는 거 없음 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-
-
     @RequestMapping(value = "/view/{id}", method = RequestMethod.GET)
     public String viewPage(@PathVariable("id") int id,Model model){
         BoardVO boardVO = boardService.getBoard(id);
         model.addAttribute("u",boardVO);
+        System.out.println();
         return "view";
     }
 
