@@ -9,9 +9,9 @@
         <property name="driverClassName" value="org.mariadb.jdbc.Driver"/>
         <!--              문제 생기면 value 확인-->
 
-        <property name="url" value="jdbc:mariadb://walab.handong.edu:3306/p232_22000082?useSSL=false"/>
-        <property name="username" value="p232_22000082"/>
-        <property name="password" value="Juech6"/>
+        <property name="url" value="jdbc:mariadb://walab.handong.edu:3306/p232_22000063?useSSL=false"/>
+        <property name="username" value="p232_22000063"/>
+        <property name="password" value="aiSh9U"/>
 
     </bean>
 
