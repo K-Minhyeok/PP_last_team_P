@@ -1,4 +1,4 @@
-package com.hello.BoardBeans;
+package com.hello.board.config;
 
 import java.util.Date;
 

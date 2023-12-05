@@ -1,6 +1,6 @@
-package com.hello.BoardDAO;
+package com.hello.board.dao;
 
-import com.hello.BoardBeans.BoardVO;
+import com.hello.board.config.BoardVO;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

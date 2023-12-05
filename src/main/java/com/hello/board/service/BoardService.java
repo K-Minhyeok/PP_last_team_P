@@ -1,7 +1,7 @@
-package com.hello.BoardService;
+package com.hello.board.service;
 
-import com.hello.BoardBeans.BoardVO;
-import com.hello.BoardDAO.BoardDAO;
+import com.hello.board.config.BoardVO;
+import com.hello.board.dao.BoardDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
