@@ -1,16 +1,13 @@
-package com.hello;
+package com.hello.board.controller;
 
-import com.hello.BoardBeans.BoardVO;
-import com.hello.BoardService.BoardService;
+import com.hello.board.config.BoardVO;
+import com.hello.board.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import java.util.List;
-import java.util.ArrayList;
 
 @Controller
 @RequestMapping(value = "/board")

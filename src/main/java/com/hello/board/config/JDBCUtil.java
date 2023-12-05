@@ -1,4 +1,4 @@
-package com.hello.BoardCommon;
+package com.hello.board.config;
 //
 //import java.sql.Connection;
 //import java.sql.DriverManager;
