@@ -145,8 +145,8 @@
                 <td><input type="text" name="price" value="${u.price}"/></td>
             </tr>
             <tr>
-                <td>File</td>
-                <td><input type="file" name="img" value="${u.getImg()}"/></td>
+                <td>Contact</td>
+                <td><input type="text" name="contact" value="${u.contact}"/></td>
             </tr>
             <tr>
                 <td>Select a location again:</td>

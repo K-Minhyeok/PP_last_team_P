@@ -142,8 +142,8 @@
                 <td><input type="text" name="price"/></td>
             </tr>
             <tr>
-                <td>File</td>
-                <td><input type="file" name="img"/></td>
+                <td>Contact</td>
+                <td><input type="text" name="contact" /></td>
             </tr>
             <tr>
                 <td>Select a location:</td>
