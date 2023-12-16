@@ -11,6 +11,7 @@ public class UserService {
     UserDAO userDAO;
 
     public UserVO getUser(UserVO userVO) {
+        System.out.println("!!");
         return userDAO.getUser(userVO);
     }
 }

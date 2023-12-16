@@ -10,6 +10,7 @@ public class UserDAO {
     @Autowired
     SqlSession sqlSession;
     public UserVO getUser(UserVO vo) {
+        System.out.println(vo.getUserid() +" "+ vo.getPassword() + vo.getUsername());
         return sqlSession.selectOne("User.getUser", vo);
     }
 }
