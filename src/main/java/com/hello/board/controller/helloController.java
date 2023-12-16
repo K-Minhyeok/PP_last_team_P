@@ -66,14 +66,15 @@ public class helloController {
         return "redirect:../posts";
     }
 
-    @RequestMapping(value = "/editpost",  method = RequestMethod.POST)
+    @RequestMapping(value = "/editform/editpost",  method = RequestMethod.POST)
     public String editPost(BoardVO vo){
+        System.out.println("!@#");
         if(boardService.updateBoard(vo)==0){
             System.out.println("데이터 수정 실패");
         }else{
             System.out.println("데이터 수정 성공");
         }
-        return "redirect:posts";
+        return "redirect:../posts";
     }
 
     @RequestMapping(value = "/view/{id}", method = RequestMethod.GET)

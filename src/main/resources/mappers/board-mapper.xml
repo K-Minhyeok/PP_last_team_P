@@ -3,7 +3,7 @@
 <mapper namespace="Board">
     <insert id="insertBoard"> insert into BOARD (title, writer, content, price, contact, category, location)
         values (#{title} , #{writer} , #{content}, #{price}, #{contact}, #{category}, #{location})</insert>
-    <update id="updateBoard"> update BOARDset title=#{title}, writer=#{writer}, content=#{content}, price=#{price},
+    <update id="updateBoard"> update BOARD set title=#{title}, writer=#{writer}, content=#{content}, price=#{price},
         contact=#{contact}, category=#{category}, location=#{location} where seq=#{seq}</update>
     <delete id="deleteBoard"> delete from BOARD where seq=#{seq} </delete>
     <select id="getBoard" resultType="com.hello.board.config.BoardVO">select * from BOARD where seq=#{seq}</select>
