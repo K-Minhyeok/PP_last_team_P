@@ -8,8 +8,7 @@
 </head>
 <body>
 
-<!-- posts.jsp로 이동  -->
-<jsp:forward page="posts.jsp" />
+<jsp:forward page="login.jsp" />
 <%--<h1>hello</h1>--%>
 </body>
 </html>

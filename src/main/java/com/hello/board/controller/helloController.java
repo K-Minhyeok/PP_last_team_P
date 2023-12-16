@@ -49,7 +49,7 @@ public class helloController {
 
 
 
-    @RequestMapping(value = "/editform/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/editform/{id}", method = {RequestMethod.GET, RequestMethod.POST})
     public String editPostForm(@PathVariable("id") int id, Model model){
         BoardVO boardVO = boardService.getBoard(id);
         model.addAttribute("u",boardVO);
