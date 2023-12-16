@@ -34,6 +34,7 @@ public class BoardDAO {
 	}
 
 	public int updateBoard(BoardVO vo) {
+		System.out.println(vo.getWriter() + " " + vo.getSeq());
 		int num = sqlSession.update("Board.updateBoard", vo);
 
 		return num;
