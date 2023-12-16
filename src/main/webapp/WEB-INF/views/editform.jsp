@@ -116,6 +116,8 @@
 <section class="jumbotron text-center">
     <h1>Edit Post</h1>
     <form action="editpost" method="post">
+        <input type="hidden" name="seq" value="${u.seq}"/>
+
         <table>
             <tr>
                 <td>Category:</td>
