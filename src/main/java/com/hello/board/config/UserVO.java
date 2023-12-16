@@ -8,4 +8,5 @@ import lombok.Setter;
 public class UserVO {
     private String userId;
     private String userName;
+    private String password;
 }
