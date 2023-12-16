@@ -2,7 +2,8 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <!-- Properties 파일설정 -->
-    <!--    <properties resource = "db.properties"/>-->
+
+<!--    <properties resource = "db.properties"/>-->
     <!-- Alias 설정 -->
     <typeAliases>
         <typeAlias alias = "Board" type = "com.hello.board.config.BoardVO"/>
