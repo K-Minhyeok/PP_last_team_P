@@ -151,9 +151,9 @@
             <tr>
                 <td>Select a location again:</td>
                 <td>
-                    <input type="checkbox"  value="bethel"> 벧엘
-                    <input type="checkbox"  value="oh"> 오석
-                    <input type="checkbox"  value="nth"> 뉴턴홀
+                    <input type="checkbox"  value="bethel" name = "location"> 벧엘
+                    <input type="checkbox"  value="oh" name = "location"> 오석
+                    <input type="checkbox"  value="nth" name = "location"> 뉴턴홀
                 </td>
             </tr>
             <tr>
