@@ -12,6 +12,8 @@ public class BoardVO {
 	private String title;
 	private String writer;
 	private String content;
+	private int price;
+	private String contact;
 	private Date regdate;
 	private String category;
 	private int cnt;
