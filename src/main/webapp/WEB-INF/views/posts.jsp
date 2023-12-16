@@ -145,14 +145,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p><strong></strong> 여기 사진 자리</p>
+                        <p><strong>Title:</strong> ${u.title}</p>
 
                     </div>
                     <div class="col-md-6 text-left">
                         <p><strong>#:</strong> ${u.seq}</p>
-                        <p><strong>Title:</strong> ${u.title}</p>
                         <p><strong>Category:</strong> ${u.category}</p>
                         <p><strong>Writer:</strong> ${u.writer}</p>
+                        <p><strong>Contact:</strong> ${u.contact}</p>
 
                         <a href="view/${u.seq}" class="btn btn-info my-2">상품 자세히 보기</a>
                         <a href="editform/${u.seq}" class="btn btn-info my-2">수정하기</a>

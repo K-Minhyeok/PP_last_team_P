@@ -144,7 +144,7 @@
                         <p><strong>Writer:</strong> ${u.writer}</p>
                         <p><strong>price:</strong> ${u.price}</p>
                         <p><strong>Content:</strong> ${u.content}</p>
-                        <p><strong>Pic:</strong> ${u.img}</p>
+                        <p><strong>Contact</strong> ${u.contact}</p>
 
                         <p><strong>Location:</strong> ${u.location}</p>
 
