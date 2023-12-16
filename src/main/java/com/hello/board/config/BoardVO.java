@@ -16,5 +16,6 @@ public class BoardVO {
 	private String contact;
 	private Date regdate;
 	private String category;
+	private String location;
 	private int cnt;
 }

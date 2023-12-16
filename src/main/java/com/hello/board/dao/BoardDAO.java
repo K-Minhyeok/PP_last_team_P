@@ -14,21 +14,12 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class BoardDAO {
-	@Autowired
-	public BoardDAO(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
-	}
 
 	@Autowired
 	private SqlSession sqlSession;
 
-	private final JdbcTemplate jdbcTemplate;
-
 
 	public int insertBoard(BoardVO vo) { // 완료
-
-//		String sql = "insert into BOARD (title,writer,content,category) values ( " + "'" + vo.getTitle() + "',"+ "'" + vo.getWriter() + "',"
-//				+ "'" + vo.getContent() + "',"+ "'" + vo.getCategory() + "')";
 
 		int result = sqlSession.insert("Board.insertBoard", vo);
 
@@ -59,33 +50,5 @@ public class BoardDAO {
 		return boardVOList;
 
 	}
-//	public List<BoardVO> getBoardList(){
-//		List<BoardVO> list = new ArrayList<BoardVO>();
-//		System.out.println("===> JDBC로 getBoardList() 기능 처리");
-//		try {
-//			conn = JDBCUtil.getConnection();
-//			stmt = conn.prepareStatement(BOARD_LIST);
-//			rs = stmt.executeQuery();
-//			while(rs.next()) {
-//				BoardVO one = new BoardVO();
-//				one.setSeq(rs.getInt("seq"));
-//				one.setTitle(rs.getString("title"));
-//				one.setWriter(rs.getString("writer"));
-//				one.setContent(rs.getString("content"));
-//				one.setRegdate(rs.getDate("regdate"));
-//				one.setCnt(rs.getInt("cnt"));
-//				list.add(one);
-//			}
-//			rs.close();
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//		return list;
-//	}
-
-
-
-
-
 
 }
